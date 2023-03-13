@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #404040;
+    text-align: center;
+    font-size: 1rem;
+}
+ 
+/* TYPOGRAPHY */
+
+
+h1{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+strong{
+    font-weight: 900;
+}
+h1+p{
+    color: #f18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+h2{
+    font-size: 1.3125rem;
+    margin: 0;
+}
+h2+p{
+    color: #f18119;
+    margin-top: 0;
+    padding-top: 2px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.top-text{
+    margin: 0;
+    font-size: 0.625rem;
+    font-weight: 900;
+    color: #f18119;
+    order: -1;
+    text-transform: uppercase;
+    border-top: 5px solid #f18119;
+   border-image: linear-gradient(to left,red,blue) 1;
+}
+.print{
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+/* ====
+INTRO SECTION
+==== */
+.intro{
+    background-color: #404040;
+    background-image: url(../BBQ/images/ribs.jpg),linear-gradient(45deg,red,blue);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+
+/* ====
+CONTENT SECTION
+==== */
+.main-content{
+    padding: 2em 1em;
+}
+.intro > * , .main-content > *{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ====
+MEDIA QUERIES
+==== */
+@media (min-width: 500px) {
+    body{
+        font-size: 1.125rem;
+        
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2,h1+p{
+        font-size: 1.75rem;
+    }
+    .container{
+        display: flex;
+    }
+    .intro, .main-content{
+        width: 50%;
+        min-height: 100vh;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* ====
+FORM
+==== */
+.form{
+    max-width: 200px;
+    width: 80%;
+
+}
+input{
+    width: 100%;
+    font-family: inherit;
+    text-align: inherit;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .24em 1.5em;
+    transition: 800ms;
+    
+}
+input{
+    margin-bottom: .65em;
+}
+input:focus{
+    transform: scale(1.2);
+}
+button{
+    font-family: inherit;
+    font-size: .625em;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 0;
+    width: 100%;
+    padding: .5em 1.5em;
+    cursor: pointer;
+    background: linear-gradient(to left,#ff713b,#ffa51d);
+    color: white;
+    transition: 800ms;
+}
+button:hover, button:focus{
+    color: black;
+    transform: scale(1.2);
+}
